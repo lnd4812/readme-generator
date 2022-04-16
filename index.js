@@ -1,10 +1,7 @@
-// TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');  
-const generatePage = require('./src/page-template');
+const generateReadme = require('./utils/generateMarkdown.js');
 
-// TODO: Create an array of questions for user input
-;
 
 const promptCreateReadme = readmeContent => {
    
@@ -63,31 +60,77 @@ if (!readmeContent.projects) {
             type: 'checkbox',
             name: 'license',
             message: 'If you would like to add a license to your project, please click on one of the choices below.  If you would prefer not to add one, please check "none".',
-            choices: ['MIT', 'None']
-        }
-    
-    
-   
-
-    const questions = () => {
-        return inquirer
-            .prompt ([
-            {
-                type: 'input',
-                name: 'title',
-                message: 'What is the title of your project'
+            choices: ['MIT', 'Apache', 'GPL', 'BSD 2-clause', 'BSD 3-clause', 'BSD 4-clause','None']
+        },
+        {
+            type: 'confirm',
+            name: 'contributing',
+            message: 'Would you like to invite other codes to contribute to your project?',
+            default: "true"
+        },
+        { 
+            type: 'input',
+            name: 'tests',
+            message: 'If there are any testing instructions, please enter in Tests section'
+        },
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your GitHub Username? (required)',
+            validate: githubNameInput => {
+                if (githubNameInput) {
+                    return true;
+                }else {
+                    console.log('Please enter your Username.');
+                }
             }
-     ]);
+        },
+        {
+            type: 'input',
+            name: 'link',
+            message: 'Please add the GitHub link to your project. (required)',
+            validate: githubLinkInput => {
+                if (githubLinkInput) {
+                     return true;
+                } else {
+                     console.log('Please enter the link to your Github repository for this project.');
+                     return false;
+                }
+            }
 
-    ]) 
-    }
+        },
+        {
+            type: 'input',
+            name: 'contact',
+            message: 'Please enter your e-mail address or other contact information if someone has a question(s) for you. (required)',
+            validate: enterContactInfo => {
+                if (enterContactInfo) {
+                    return true;
+                } else {
+                    console.log('Please enter your contact information.');
+                    return false;
+                }
+            }
+        },
+    ])
+};
+promptCreateReadme()
+    .then(readmeContent => {
+        const pageMD = generateReadme(readmeContent);
+
+        fs.writeToFile('./dist/README.md', pageMD, err => {
+            if(err) console.log(err);
+            return;
+        })
+
+    })
+       
 
     
             
-        )
-}
+       
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {}
