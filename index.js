@@ -1,15 +1,11 @@
 const fs = require('fs');
-const inquirer = require('inquirer');  
-const generateReadme = require('./utils/generateMarkdown.js');
+const inquirer = require('inquirer'); 
+const generateReadme = require('./dist/readme-template.js');
 
-
-const promptCreateReadme = readmeContent => {
-   
 // if no array established from previous input, create one
 
-if (!readmeContent.projects) {
-    readmeContent.projects = [];
-}
+// if (!readmeContent.projects) {
+//     readmeContent.projects = [];
  return inquirer
     .prompt([
         
@@ -112,23 +108,23 @@ if (!readmeContent.projects) {
                 }
             }
         },
-    ])
-};
-promptCreateReadme()
-    .then(readmeContent => {
-        const pageMD = generateReadme(readmeContent);
+    ]);
 
-        fs.writeToFile('./dist/README.md', pageMD, err => {
-            if(err) console.log(err);
-            return;
-        })
 
-    })
+// promptCreateReadme()
+//     .then(readmeContent => {
+//         const pageMD = generateReadme(readmeContent);
+
+//         fs.writeToFile('./dist/README.md', pageMD, err => {
+//             if(err) console.log(err);
+//             return;
+//         })
+//         console.log('page created');
+//     })
        
 
     
             
-       
 
 // TODO: Create a function to write README file
 
