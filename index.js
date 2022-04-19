@@ -1,14 +1,19 @@
 const fs = require('fs');
-const inquirer = require('inquirer'); 
-const generateReadme = require('./dist/readme-template.js');
+const inquirer = require('inquirer');
+const questions = process.argv.slice(2);
+const {title, description, installation, usage, license, contributing, tests, github, link, contact} = questions;  
+generateReadme = require('./dist/readme-template.js');
+
 
 // if no array established from previous input, create one
+// if (!readmeContent.questions) {
+//     readmeContent.questions = [];
+     
+    const promptUser = () => {
+        // if (!readmeContent.questions) {
+        //    readmeContent.questions = [];
 
-// if (!readmeContent.projects) {
-//     readmeContent.projects = [];
- return inquirer
-    .prompt([
-        
+        return inquirer.prompt([
         {
             type: 'input',
             name: 'title',
@@ -110,26 +115,36 @@ const generateReadme = require('./dist/readme-template.js');
         },
     ]);
 
+  };
 
-// promptCreateReadme()
+promptUser().then(readmeContent => {
+    readmeContent.push(questions);
+    return readmeContent;
+});
+console.log("array created I think");
+
+
+
+
+// promptUser()
 //     .then(readmeContent => {
 //         const pageMD = generateReadme(readmeContent);
 
-//         fs.writeToFile('./dist/README.md', pageMD, err => {
-//             if(err) console.log(err);
-//             return;
-//         })
-//         console.log('page created');
-//     })
+//         fs.writeFile('./dist/readme-template.js', pageMD, err => {
+//              if(err) console.log(err);
+//              return;
+//          })
+//          console.log('page created');
+//      });
        
 
     
             
 
-// TODO: Create a function to write README file
+// // TODO: Create a function to write README file
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
