@@ -1,8 +1,6 @@
 const fs = require('fs');
-const inquirer = require('inquirer');
-const questions = process.argv.slice(2);
-const {title, description, installation, usage, license, contributing, tests, github, link, contact} = questions;  
-generateReadme = require('./dist/readme-template.js');
+const questions = {title, description, installation, usage, license, contributing, tests, github, link, contact}  
+const generateReadme = require('./dist/readme-template.js');
 
 
 // if no array established from previous input, create one

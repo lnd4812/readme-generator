@@ -1,11 +1,47 @@
 const fs = require('fs');
-const questions = process.argv.slice(2);
+
+const generateSections = readmeArr => {
+   
+    const questionsReadmeArr = readmeArr.map(({title, descript, tableOfContents, installation, usage, license, contributing, tests, addlQuestions}) => {
+
+return`
+
+'# '${generateSections(templateData.title)}
+
+'## ' ${generateSections(templateData.description)}
+
+'## ' ${generateSections(templateData.tableOfContents)}
+
+'## ' ${generateSections(templateData.installation)}
+
+'## ' ${generateSections(templateData.usage)}
+
+'## '${generateSections(templateData.license)}
+
+'## '${generateSections(templateData.contributing)}
+
+'## '${generateSections(templateData.tests)}
+
+'## '${generateSections(templateData.addlQuestions)}
+
+`;
+});
+
+return `
+$(questionsreadmeArr.join('') }
+    
+  `;
+};
 
 
-// generateProjects => createReadme - define projectsArr
+module.exports = templateData => {
+    const {title, description, installation, ...theRest} = templateData;  
+    console.log(templateData);
+// }
+
 // 
 
-const createReadme = readmeContent => {
+// const createReadme = readmeContent => {
 
     return`
     '# '${title}
