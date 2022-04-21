@@ -1,82 +1,84 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const references = {title, description, installation, usage, license, contributing, tests, github, link, contact}  
-const generateReadme = require('./dist/generateMarkdown.js');
-
+// const references = {title, description, installation, usage, license, contributing, tests, github, link, contact}  
+// const generateReadme = require('./dist/generateMarkdown.js');
+// const pageMD = generateReadme(title, description, installation, usage, license, contributing, tests, github, link, contact); 
 
 const promptUser = () => {
 
     return inquirer
         .prompt([
-    
-    {
-        type: 'input',
-        name: 'title',
-        message: 'Please enter the title of your project. (required)',
-        validate:   titleEntered => {
-            if (titleEntered) {
-                return true;
-            } else {
-                console.log('Please enter project title!');
-                return false;
+        {
+            type: 'input',
+            name: 'title',
+            message: 'Please enter the title of your project. (required)',
+            validate:   titleEntered => {
+                if (titleEntered) {
+                    return true;
+                } else {
+                    console.log('Please enter project title!');
+                    return false;
+                }    
+            }
+        },
+        {   
+            type: 'input',
+            name: 'description',
+            message: 'Please provide a description of your project. (required)',
+            validate:   descriptionEntered => {
+                if (descriptionEntered) {
+                    return true;
+                } else {
+                    console.log('Please provide a description of your project.');
+                    return false;
+                }
+            }
+        },       
+        {   
+            type: 'input',
+            name: 'installation',
+            message: 'Please provide guidelines for how to install your project (required)',
+            validate:   installationAdded => {
+                if (installationAdded) {
+                    return true;
+                } else {
+                    console.log('Please enter instructions for the installation of your project.  If not applicable, enter NA.');
+                    return false;
+                }
             }    
-        }
-    },
-    {   
-        type: 'input',
-        name: 'description',
-        message: 'Please provide a description of your project. (required)',
-        validate:   descriptionEntered => {
-            if (descriptionEntered) {
-                return true;
-            } else {
-                console.log('Please provide a description of your project.');
-                return false;
-            }
-        }
-    },       
-    {   
-        type: 'input',
-        name: 'installation',
-        message: 'Please provide guidelines for how to install your project (required)',
-        validate:   installationAdded => {
-            if (installationAdded) {
-                return true;
-            } else {
-                console.log('Please enter instructions for the installation of your project.  If not applicable, enter NA.');
-                return false;
-            }
-        }    
-    },
-    {   
-        type: 'input',
-        name:  'usage',
-        message: 'Please explain how project is to be used, including examples where applicable.'
-    },
-    {
-        type: 'checkbox',
-        name: 'license',
-        message: 'If you would like to add a license to your project, please click on one of the choices below.  If you would prefer not to add one, please check "none".',
-        choices: ['MIT', 'Apache', 'GPL', 'BSD 2-clause', 'BSD 3-clause', 'BSD 4-clause','None']
-    },
-    {
-        type: 'confirm',
-        name: 'contributing',
-        message: 'Would you like to invite other codes to contribute to your project?',
-        default: "true"
-    },
-    { 
-        type: 'input',
-        name: 'tests',
-        message: 'If project includes tests for applicable, please including, providing examples on how to apply them.'
-    },
-        ]);
+        },
+        {   
+            type: 'input',
+            name:  'usage',
+            message: 'Please explain how project is to be used, including examples where applicable.'
+        },
+        {
+            type: 'checkbox',
+            name: 'license',
+            message: 'If you would like to add a license to your project, please click on one of the options below.  If you would prefer not to add one or to add one later, please check "none".',
+            choices: ['MIT', 'Apache', 'GPL', 'BSD 2-clause', 'BSD 3-clause', 'BSD 4-clause','None']
+        },
+        {
+            type: 'confirm',
+            name: 'contributing',
+            message: 'Are you interested in having other contribute to your project?',
+            default: "true"
+        },
+        { 
+            type: 'input',
+            name: 'tests',
+            message: 'If project includes tests for application, please include, along with examples on how to apply them.'
+        },
+    ]);
 };
-    
-const promptQuestions = readmeQuestions => {
+  
+// include section with contact details for those with questions
+const promptQuestions = () => {
     console.log(`
     
     QUESTIONS?
+
+    If you have any questions, please see my contact details below:
     `);
 
     return inquirer
@@ -96,7 +98,7 @@ const promptQuestions = readmeQuestions => {
             {
                 type: 'input',
                 name: 'link',
-                message: 'Please add the GitHub link to your project. (required)',
+                message: 'Please add a link to your GitHub repository. (required)',
                 validate: githubLinkInput => {
                     if (githubLinkInput) {
                             return true;
@@ -109,7 +111,7 @@ const promptQuestions = readmeQuestions => {
             {
                 type: 'input',
                 name: 'contact',
-                message: 'Please enter your e-mail address or other contact information if someone has a question(s) for you. (required)',
+                message: 'Please enter the e-mail address at which you may be contacted. (required)',
                 validate: enterContactInfo => {
                     if (enterContactInfo) {
                         return true;
@@ -119,20 +121,21 @@ const promptQuestions = readmeQuestions => {
                     }
                 }
             }
-        ])
-        .then(askQuestions => {
-           readmeQuestions.questions.push(askQuestions); 
-        });
+        ]);    
+    };  
+    promptUser()
+        .then(answers => console.log(answers))
+        .then(promptQuestions)
+        .then(questionsAnswers => console.log(questionsAnswers)); 
+    //     fs.writeFile('generateMarkdown.js', generateReadme(title, description, installation, usage, license, contributing, tests
+            
+    //         ), err => {
+    //         if (err) throw err;
+    //         console.log("page printed");
+    //     })
 
-    };
+    // return readmeContent;
 
-promptUser()
-    .then(promptQuestion)
-    .then(readmeQuestions => {
-        const pageMD = generateReadme(readmeQuestions)
-    return readmeContent;
-});
-console.log("array created I think");
 
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
@@ -155,7 +158,7 @@ console.log("array created I think");
 //     .then(readmeContent => {
 //         const pageMD = generateReadme(readmeContent);
 
-//         fs.writeFile('./dist/readme-template.js', pageMD, err => {
+//         fs.writeFile('generateMarkdown.js', pageMD, err => {
 //              if(err) console.log(err);
 //              return;
 //          })
@@ -164,10 +167,6 @@ console.log("array created I think");
        
 
     
-            
-
-// // TODO: Create a function to write README file
-
 // // TODO: Create a function to initialize app
 // function init() {}
 

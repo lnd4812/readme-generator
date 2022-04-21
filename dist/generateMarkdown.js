@@ -1,37 +1,45 @@
-const fs = require('fs');
+// const fs = require('fs');
 
-const generateSections = readmeArr => {
+// const generateSections = (title, description, installation, usage, license, contributing, tests, github, link, contact) => {
    
-    const questionsReadmeArr = readmeArr.map(({title, descript, tableOfContents, installation, usage, license, contributing, tests, addlQuestions}) => {
+//     // const questionsReadmeArr = readmeArr.map(({title, descript, tableOfContents, installation, usage, license, contributing, tests, addlQuestions}) => {
 
-return`
+// return`
 
-'# '${generateSections(templateData.title)}
+// '# '${generateSections(title)}
 
-'## ' ${generateSections(templateData.description)}
+// '## ' ${generateSections(description)}
 
-'## ' ${generateSections(templateData.tableOfContents)}
+// '## Table of Contents
+// * [Installation](#installation)
+// * [Usage](#usage)
+// * [Credits](#credits)
+// * [License](#license)'
 
-'## ' ${generateSections(templateData.installation)}
+// '## ' ${generateSections(installation)}
 
-'## ' ${generateSections(templateData.usage)}
+// '## ' ${generateSections(usage)}
 
-'## '${generateSections(templateData.license)}
+// '## '${generateSections(license)}
 
-'## '${generateSections(templateData.contributing)}
+// '## '${generateSections(contributing)}
 
-'## '${generateSections(templateData.tests)}
+// '## '${generateSections(tests)}
 
-'## '${generateSections(templateData.addlQuestions)}
+// '## '${generateSections(github)}
 
-`;
-});
+// '## '${generateSections(link)}
 
-return `
-$(questionsreadmeArr.join('') }
+// '## '${generateSections(contact)}
+
+// `;
+// });
+
+// return `
+// $(questionsreadmeArr.join('') }
     
-  `;
-};
+//   `;
+// };
 
 
 module.exports = templateData => {
@@ -69,5 +77,5 @@ module.exports = templateData => {
 //     if (err) throw new Error(err);
 // });
 
-// module.exports = readmeContent;
-// const {title, description, installation, usage, license, contributing, tests, github, link, contact} = readmeContent;  
+// module.exports = generateReadme;
+// // const {title, description, installation, usage, license, contributing, tests, github, link, contact} = readmeContent;  
