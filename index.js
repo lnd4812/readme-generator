@@ -1,18 +1,16 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-// const references = {title, description, installation, usage, license, contributing, tests, github, link, contact}  
-// const generateReadme = require('./dist/generateMarkdown.js');
-// const pageMD = generateReadme(title, description, installation, usage, license, contributing, tests, github, link, contact); 
+const generateMarkdown = require('./dist/generateMarkdown.js');
 
 const promptUser = () => {
-
+    
     return inquirer
         .prompt([
         {
             type: 'input',
             name: 'title',
             message: 'Please enter the title of your project. (required)',
-            validate:   titleEntered => {
+            validate: titleEntered => {
                 if (titleEntered) {
                     return true;
                 } else {
@@ -71,9 +69,10 @@ const promptUser = () => {
         },
     ]);
 };
+
   
-// include section with contact details for those with questions
-const promptQuestions = () => {
+    //include section with contact details for those with questions
+    const promptQuestions = dataQuestions => {
     console.log(`
     
     QUESTIONS?
@@ -81,6 +80,8 @@ const promptQuestions = () => {
     If you have any questions, please see my contact details below:
     `);
 
+    // first create questions array 
+    
     return inquirer
         .prompt([
                 {
@@ -121,20 +122,20 @@ const promptQuestions = () => {
                     }
                 }
             }
-        ]);    
-    };  
+        ])
+     }        
+      
     promptUser()
-        .then(answers => console.log(answers))
-        .then(promptQuestions)
-        .then(questionsAnswers => console.log(questionsAnswers)); 
-    //     fs.writeFile('generateMarkdown.js', generateReadme(title, description, installation, usage, license, contributing, tests
-            
-    //         ), err => {
-    //         if (err) throw err;
-    //         console.log("page printed");
-    //     })
-
-    // return readmeContent;
+        .then (promptQuestions)
+        .then(data => {
+         const readmePage = generateMarkdown(data); 
+       
+            fs.writeFile('./dist/generateMarkdown.js', readmePage, err => {
+            if (err) throw err;
+            return;
+            });    
+        
+    });
 
 
 // GIVEN a command-line application that accepts user input
@@ -153,18 +154,7 @@ const promptQuestions = () => {
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
-
-// promptUser()
-//     .then(readmeContent => {
-//         const pageMD = generateReadme(readmeContent);
-
-//         fs.writeFile('generateMarkdown.js', pageMD, err => {
-//              if(err) console.log(err);
-//              return;
-//          })
-//          console.log('page created');
-//      });
-       
+     
 
     
 // // TODO: Create a function to initialize app
