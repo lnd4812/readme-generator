@@ -1,6 +1,9 @@
+
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./dist/generateMarkdown.js');
+const { isDataView } = require('util/types');
+const {writeFile} = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./dist/README.js');
 
 const promptUser = () => {
     
@@ -58,7 +61,7 @@ const promptUser = () => {
         },
         {
             type: 'confirm',
-            name: 'contributing',
+            name: 'contribute',
             message: 'Are you interested in having other contribute to your project?',
             default: "true"
         },
@@ -67,76 +70,58 @@ const promptUser = () => {
             name: 'tests',
             message: 'If project includes tests for application, please include, along with examples on how to apply them.'
         },
+  
+        // contact details for questions
+        {
+            type: 'input',
+            name: 'github',
+            message: 'What is your GitHub Username? (required)',
+            validate: githubNameInput => {
+                if (githubNameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your Username.');
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'link',
+            message: 'Please add a link to your GitHub repository. (required)',
+            validate: githubLinkInput => {
+                if (githubLinkInput) {
+                            return true;
+                } else {
+                        console.log('Please enter the link to your Github repository for this project.');
+                        return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'contact',
+            message: 'Please enter an e-mail address at which you may be contacted in case there are questions. (required)',
+            validate: enterContactInfo => {
+                if (enterContactInfo) {
+                    return true;
+                } else {
+                    console.log('Please enter your contact information.');
+                    return false;
+                }
+            } 
+        }
     ]);
 };
 
-  
-    //include section with contact details for those with questions
-    const promptQuestions = dataQuestions => {
-    console.log(`
-    
-    QUESTIONS?
-
-    If you have any questions, please see my contact details below:
-    `);
-
-    // first create questions array 
-    
-    return inquirer
-        .prompt([
-                {
-                type: 'input',
-                name: 'github',
-                message: 'What is your GitHub Username? (required)',
-                validate: githubNameInput => {
-                    if (githubNameInput) {
-                        return true;
-                    } else {
-                        console.log('Please enter your Username.');
-                    }
-                }
-            },
-            {
-                type: 'input',
-                name: 'link',
-                message: 'Please add a link to your GitHub repository. (required)',
-                validate: githubLinkInput => {
-                    if (githubLinkInput) {
-                            return true;
-                    } else {
-                            console.log('Please enter the link to your Github repository for this project.');
-                            return false;
-                    }
-                }
-            },
-            {
-                type: 'input',
-                name: 'contact',
-                message: 'Please enter the e-mail address at which you may be contacted. (required)',
-                validate: enterContactInfo => {
-                    if (enterContactInfo) {
-                        return true;
-                    } else {
-                        console.log('Please enter your contact information.');
-                        return false;
-                    }
-                }
-            }
-        ])
-     }        
-      
-    promptUser()
-        .then (promptQuestions)
-        .then(data => {
-         const readmePage = generateMarkdown(data); 
+promptUser()
+    .then(answers => {
+    const generateMarkdown = answers;
+    console.log(generateMarkdown);
        
-            fs.writeFile('./dist/generateMarkdown.js', readmePage, err => {
-            if (err) throw err;
-            return;
-            });    
-        
+    fs.writeFile('./dist/README.js', generateMarkdown, err => {
+        if (err) throw err;
     });
-
+});
 
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
@@ -154,9 +139,9 @@ const promptUser = () => {
 // WHEN I click on the links in the Table of Contents
 // THEN I am taken to the corresponding section of the README
 
-     
 
-    
+
+
 // // TODO: Create a function to initialize app
 // function init() {}
 
