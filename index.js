@@ -1,8 +1,8 @@
 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { isDataView } = require('util/types');
-const {writeFile} = require('./utils/generateMarkdown.js');
+// const { isDataView } = require('util/types');
+// const {writeFile} = require('./utils/generateMarkdown.js');
 const generateMarkdown = require('./dist/README.js');
 
 const promptUser = () => {
