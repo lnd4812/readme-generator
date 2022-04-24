@@ -82,8 +82,10 @@ ${data.description}
     
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
+* [Testing](#testing)
+* [Credits](#credits)
+* [Questions](#questions)
     
 ## Installation
     
@@ -105,23 +107,25 @@ ${data.contribute}
    
 ${data.tests}
 
-==========
-QUESTIONS??
-===========
+## Credits
+
+${data.credits}
+
+## QUESTIONS??
 
 If you have any questions, please see my contact details below:
         
-## GitHub Address
+## GitHub Username
     
-My GitHub address may be accessed here: ${data.github}
+My GitHub Username is ${data.github}
         
 ## GitHub Repository
     
-Please click on the following link to access the repository for this program ${data.link}
+My GitHub repository link for this project is ${data.link}
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at the following address: (<a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>);
+To contact me directly, please feel free to drop me an e-mail at: (<a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>);
 `;
   
 };

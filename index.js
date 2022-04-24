@@ -59,15 +59,19 @@ const promptUser = () => {
             choices: ['MIT', 'Apache', 'GPL', 'BSD 2-clause', 'BSD 3-clause', 'CC0','None']
         },
         {
-            type: 'confirm',
+            type: 'input',
             name: 'contribute',
-            message: 'Are you interested in having other contribute to your project?',
-            default: "true"
+            message: 'If you would like other developers to contribute to your project, please provide guidelines for how to do so',
         },
         { 
             type: 'input',
             name: 'tests',
             message: 'If project includes tests for application, please include, along with examples on how to apply them.'
+        },
+        { 
+            type: 'input',
+            name: 'credits',
+            message: 'If you had collaborators or consulted other sources for input or assistance on your project, please list them below with links to their respective Github profiles or URLs.'
         },
   
         // contact details for questions

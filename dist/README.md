@@ -4,22 +4,24 @@ Readme Generator
   
 ## Description
     
-dsdhoasdhf[a
+Module 9 challenge assignment requiring the use of Node js to create a command line program to generate a README.md template.  Integration with the inquirer and file system modules enabled a series of questions to prompt the user for questions that were then exported to a template using fs writeFile and module.exports to access and allocate the data returned from the inquirer prompt function.
 
 ## Table of Contents
     
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
+* [Testing](#testing)
+* [Credits](#credits)
+* [Questions](#questions)
     
 ## Installation
     
-oiashd
+typing "node index.js" in the command line will initiate the app.
     
 ##  Usage
    
-hasodi
+A developer may use this template to produce a README for any project pushed to GitHub by answering a series of questions rather than having to create a README from scratch for each project.  
     
 ## License
     
@@ -83,30 +85,32 @@ This repository includes function renderLicenseLink(link) {
         break;
     }
     `;
-}GPL.
+}MIT.
 
 ## Contributing
    
-true
+. Please visit the contributor-covenant.org site for informaton.
     
 ## Testing
    
-testing not applicable
+do a run through of the function to ensure all informaiton is being added to the generated README as intended.
 
-==========
-QUESTIONS??
-===========
+## Credits
+
+Tutoring sessions, Office Hours, various look-ups on Stack Overflow , MDN Docs and W3 schools
+
+## QUESTIONS??
 
 If you have any questions, please see my contact details below:
         
-## GitHub Address
+## GitHub Username
     
-My GitHub address may be accessed here: lnd4812
+My GitHub Username is lnd4812
         
 ## GitHub Repository
     
-Please click on the following link to access the repository for this program git@github.com/lnd4812/readme-generator.git
+My GitHub repository link for this project is [github repository](https://git@github.com/lnd4812/readme-generator.git)
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at the following address: (<a hef="mailto:laureldavid64@gmail.com">laureldavid64@gmail.com</a>);
+To contact me directly, please feel free to drop me an e-mail at: (<a hef="mailto:laureldavid@rmacan.com">laureldavid64@gmail.com</a>);
