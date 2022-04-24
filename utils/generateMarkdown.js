@@ -1,7 +1,7 @@
 // template that will create the README file
 
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
-function renderLicenseLink(license) {
+function renderLicenseLink(link) {
     return ` 
     
     switch ${license} {
@@ -71,7 +71,8 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   
 return `
-# ${data.title}
+# Title
+${data.title}
   
 ## Description
     
@@ -79,10 +80,10 @@ ${data.description}
 
 ## Table of Contents
     
-[Installation](https://github.com/lnd4812/readme-generator#installation)
-[Usage](https://github.com/lnd4812/readme-generator#usage)
-[Credits](https://github.com/lnd4812/readme-generator#credits)
-[License](https://github.com/lnd4812/readme-generator#license)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
     
 ## Installation
     
@@ -94,7 +95,7 @@ ${data.usage}
     
 ## License
     
-This repository includes [license](${renderLicenseLink},${renderLicenseSection}${data.license})).
+This repository includes ${renderLicenseLink},${renderLicenseSection}${data.license}.
 
 ## Contributing
    
@@ -103,6 +104,7 @@ ${data.contribute}
 ## Testing
    
 ${data.tests}
+
 ==========
 QUESTIONS??
 ===========
@@ -111,15 +113,15 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Address
     
-My GitHub address may be accessed here #[GitHub address](<a href=${data.github}>here</a>)
+My GitHub address may be accessed here: ${data.github}
         
 ## GitHub Repository
     
-Please click on the following link to access the repository for this program #[GitHub Repo Link ${data.link}](https://github.com/lnd4812/readme-generator)
+Please click on the following link to access the repository for this program ${data.link}
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at the following address: [email address](<a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>);
+To contact me directly, please feel free to drop me an e-mail at the following address: (<a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>);
 `;
   
 };

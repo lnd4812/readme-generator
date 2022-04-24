@@ -1,28 +1,29 @@
 
 # Title
+Readme Generator
   
 ## Description
     
-readme generator
+dsdhoasdhf[a
 
 ## Table of Contents
     
-[Installation](https://github.com/lnd4812/readme-generator#installation)
-[Usage](https://github.com/lnd4812/readme-generator#usage)
-[Credits](https://github.com/lnd4812/readme-generator#credits)
-[License](https://github.com/lnd4812/readme-generator#license)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
     
 ## Installation
     
-type in node index.js
+oiashd
     
 ##  Usage
    
-create readme for projects
+hasodi
     
 ## License
     
-This repository includes [license](function renderLicenseLink(license) {
+This repository includes function renderLicenseLink(link) {
     return ` 
     
     switch ${license} {
@@ -82,15 +83,16 @@ This repository includes [license](function renderLicenseLink(license) {
         break;
     }
     `;
-})).
+}GPL.
 
 ## Contributing
    
-false
+true
     
 ## Testing
    
-no tests applicable
+testing not applicable
+
 ==========
 QUESTIONS??
 ===========
@@ -99,12 +101,12 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Address
     
-My GitHub address may be accessed here #[GitHub address](<a href=lnd4812>here</a>)
+My GitHub address may be accessed here: lnd4812
         
 ## GitHub Repository
     
-Please click on the following link to access the repository for this program #[GitHub Repo Link github.com](https://github.com/lnd4812/readme-generator)
+Please click on the following link to access the repository for this program git@github.com/lnd4812/readme-generator.git
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at the following address: [email address](<a hef="mailto:laurelda">laureldavid64@gmail.com</a>);
+To contact me directly, please feel free to drop me an e-mail at the following address: (<a hef="mailto:laureldavid64@gmail.com">laureldavid64@gmail.com</a>);
