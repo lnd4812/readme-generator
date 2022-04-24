@@ -94,7 +94,7 @@ ${data.usage}
     
 ## License
     
-This repository includes [license](${renderLicenseLink}${renderLicenseSection}(data.license)}).
+This repository includes [license](${renderLicenseLink},${renderLicenseSection}${data.license})).
 
 ## Contributing
    
@@ -103,14 +103,7 @@ ${data.contribute}
 ## Testing
    
 ${data.tests}
-
-`;
-}
-
-function generateMarkdown(questions) {
-    
-return   `
-===========
+==========
 QUESTIONS??
 ===========
 
@@ -118,15 +111,15 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Address
     
-My GitHub address may be accessed here #[GitHub address](<a href=${questions.github}>here</a>)
+My GitHub address may be accessed here #[GitHub address](<a href=${data.github}>here</a>)
         
 ## GitHub Repository
     
-Please click on the following link to access the repository for this program #[GitHub Repo Link ${questions.link}](https://github.com/lnd4812/readme-generator)
+Please click on the following link to access the repository for this program #[GitHub Repo Link ${data.link}](https://github.com/lnd4812/readme-generator)
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at the following address: [email address](<a hef="mailto:${questions.contact}">laureldavid64@gmail.com</a>);
+To contact me directly, please feel free to drop me an e-mail at the following address: [email address](<a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>);
 `;
   
 };

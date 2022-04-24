@@ -123,7 +123,7 @@ function init() {
     console.log(generatedMarkdown);       
 
     // generate readme
-    fs.writeFile('./dist/README.md', generatedMarkdown, err => {
+    fs.writeFileSync('./dist/README.md', generatedMarkdown, err => {
         if (err) throw err;
     });
 });
