@@ -61,7 +61,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'contribute',
-            message: 'If you would like other developers to contribute to your project, please provide guidelines for how to do so',
+            message: 'If you would like other developers to contribute to your project, please include guidelines for how to do so.',
         },
         { 
             type: 'input',

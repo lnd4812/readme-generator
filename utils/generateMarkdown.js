@@ -1,9 +1,11 @@
 // template that will create the README file
 
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
-function renderLicenseLink(link) {
+function renderLicenseLink(license) {
     return ` 
-    
+
+    let licenseLink = "";
+
     switch ${license} {
 
         case "MIT":
@@ -29,14 +31,16 @@ function renderLicenseLink(link) {
         default:
         licenseLink = "";
         break;
-    }
-    
+        }
     `;
 };
 
 // function that returns the license section of README; if there is no license, an empty string is returned
 function renderLicenseSection(license) {    
     return ` 
+    
+    let licenseSection = "";
+
     switch ${license} {
 
         case "MIT":
@@ -97,7 +101,7 @@ ${data.usage}
     
 ## License
     
-This repository includes ${renderLicenseLink},${renderLicenseSection}${data.license}.
+This repository includes ${renderLicenseLink(licenseLink)},${renderLicenseSection(licenseSection)}${data.license}.
 
 ## Contributing
    
@@ -117,15 +121,15 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is ${data.github}
+My GitHub Username is <a href="github.com:${data.github}">lnd4812</a>;
         
 ## GitHub Repository
     
-My GitHub repository link for this project is ${data.link}
+My GitHub repository link for this project is <a href="${data.link}">git@github.com/lnd4812/readme-generator.git</a>;
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at: (<a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>);
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>;
 `;
   
 };
