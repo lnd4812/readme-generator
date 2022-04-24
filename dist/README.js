@@ -43,12 +43,12 @@ module.exports = generateMarkdown => {
    
 
   
-// const generateQuestions = questions => { 
-//   return`
+// // const generateQuestions = questions => { 
+// //   return`
   
-'If you have any questions, please see my contact details below:'
+// 'If you have any questions, please see my contact details below:'
   
-## GitHub Adddress'
+// ## GitHub Adddress'
 
 // //     <a href="${questions.github}"></a>
     
