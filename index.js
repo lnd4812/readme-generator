@@ -56,7 +56,7 @@ const promptUser = () => {
             type: 'checkbox',
             name: 'license',
             message: 'If you would like to add a license to your project, please click on one of the options below.  If you would prefer not to add one or to add one later, please check "none".',
-            choices: ['MIT', 'Apache', 'GPL', 'BSD 2-clause', 'BSD 3-clause', 'BSD 4-clause','None']
+            choices: ['MIT', 'Apache', 'GPL', 'BSD 2-clause', 'BSD 3-clause', 'CC0','None']
         },
         {
             type: 'confirm',
