@@ -4,7 +4,11 @@
 
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
-// function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+return ` <a href="">license link</a>
+`;
+
+}
 
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
@@ -12,9 +16,44 @@
 
  // TODO: Create a function to generate markdown for README
  function generateMarkdown(data) {
-  return `# ${data.title}
+  
+  return `
+     
+    '# '${data.title}
 
- `;
+  
+    '## Description'
+    
+    ${data.description}
+
+    '## Table of Contents
+    
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Credits](#credits)
+    * [License](#license)'
+    
+   '## Installation'
+    
+   ${data.installation}
+    
+   ##  Usage'
+   
+   ${data.usage}
+    
+   ## License
+    
+   This repository includes ${renderLicenseLink(data.license)} license.
+
+   ## Contributing
+   
+   ${data.contribute}
+    
+   ## Testing
+   
+   ${data.tests}
+`;
+ 
  }
 
  module.exports = generateMarkdown;
