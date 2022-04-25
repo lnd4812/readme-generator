@@ -2,12 +2,12 @@
 
 
 # Title
-Title
+title
 
   
 ## Description
     
-description
+saohdi
 
 ## Table of Contents
     
@@ -20,27 +20,27 @@ description
     
 ## Installation
     
-install
+ahsoihfp;ais
     
 ##  Usage
    
-usage
+odha
     
 ## License
     
-This repository includes Apache license .
+This repository includes a(n) Apache license. 
 
 ## Contributing
    
-contribute
+aoisaiu
     
 ## Testing
    
-tests
+aosdpi
 
 ## Credits
 
-not applicable
+sadfh
 
 ## Questions?
 
@@ -48,12 +48,12 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="github.com:github.com:lnd4812">lnd4812</a>
+My GitHub Username is <a href="github.com:sd">'github.com:lnd4812'</a>
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="git@github.com/lnd4812/readme-generator.git"></a>
+My GitHub repository link for this project is <a href="\8sp9fo\">'git@github.com/lnd4812/readme-generator.git'</a>
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:laureldavid64@gmail.com">laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:saoid">laureldavid64@gmail.com</a>
