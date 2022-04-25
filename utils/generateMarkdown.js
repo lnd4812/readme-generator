@@ -2,81 +2,78 @@
 
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
 function renderLicenseLink(license) {
-    return ` 
-
+    
     let licenseLink = "";
 
-    switch ${license} {
+    switch (license) {
 
         case "MIT":
-        licenseLink = [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)];
+        licenseLink = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
         break;
 
         case "Apache":
-        licenseLink = ([![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)];
+        licenseLink = "([![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
         break;
 
         case "BSD 2-clause":
-        licenseLink = [![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)];
+        licenseLink = "[![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)]";
         break;
 
         case "BSD 3-clause":
-        licenseLink = [![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)];
+        licenseLink = "[![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
         break;
 
         case "CC0":
-        licenseLink = [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)];
+        licenseLink = "[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)]";
         break;
 
         default:
         licenseLink = "";
         break;
-        }
-    `;
-};
+    }
+}
 
 // function that returns the license section of README; if there is no license, an empty string is returned
 function renderLicenseSection(license) {    
-    return ` 
-    
+      
     let licenseSection = "";
 
-    switch ${license} {
+    switch (license) {
 
         case "MIT":
-        licenseSection = [MIT license link](https://choosealicense.com/licenses/mit/);
+        licenseSection = "[MIT license link](https://choosealicense.com/licenses/mit/)";
         break;
 
         case "Apache":
-        licenseSection = [Apache license link](https://choosealicense.com/licenses/apache-2.0/);
+        licenseSection = "[Apache license link](https://choosealicense.com/licenses/apache-2.0/)";
         break;
 
         case "BSD 2-clause":
-        licenseSection = [2-Clause BSD license link](https://opensource.org/licenses/BSD-2-Clause);
+        licenseSection = "[2-Clause BSD license link](https://opensource.org/licenses/BSD-2-Clause)";
         break;
 
         case "BSD 3-clause":
-        licenseSection = [3-Clause BSD license link](https://opensource.org/licenses/BSD-3-Clause);
+        licenseSection = "[3-Clause BSD license link](https://opensource.org/licenses/BSD-3-Clause)";
         break;
 
         case "CC0":
-        licenseSection = [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/);
+        licenseSection = "[Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)";
         break;
 
         default:
         licenseSection = "";
         break;
     }
-    `;
 };
 
 // function to generate markdown for read me
 
 function generateMarkdown(data) {
-  
+
 return `
 # Title
 ${data.title}
+//license badge here?
   
 ## Description
     
@@ -101,7 +98,8 @@ ${data.usage}
     
 ## License
     
-This repository includes ${renderLicenseLink(licenseLink)},${renderLicenseSection(licenseSection)}${data.license}.
+This repository includes ${data.license} license.
+// how to add license url
 
 ## Contributing
    
@@ -115,7 +113,7 @@ ${data.tests}
 
 ${data.credits}
 
-## QUESTIONS??
+## Questions?
 
 If you have any questions, please see my contact details below:
         
@@ -136,5 +134,10 @@ To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto
       
 // access information produced from index.js file
 module.exports = generateMarkdown;
+let license = generateMarkdown.license;
+
+renderLicenseLink(license);
+renderLicenseSection(license);
+
     
 
