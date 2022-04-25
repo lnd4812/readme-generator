@@ -67,6 +67,7 @@ function renderLicenseSection(license) {
         break;
     }    
     return licenseSection;
+    
 };
 
 // function to generate markdown for read me
@@ -123,15 +124,15 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="github.com:${data.github}">lnd4812</a>;
+My GitHub Username is <a href="github.com:${data.github}">lnd4812</a>
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="${data.link}">git@github.com/lnd4812/readme-generator.git</a>;
+My GitHub repository link for this project is <a href="${data.link}"></a>
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>;
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:${data.contact}">laureldavid64@gmail.com</a>
 `;
   
 };
