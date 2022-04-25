@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 // template that will create the README file
 
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
@@ -74,8 +76,11 @@ function renderLicenseSection(license) {
 
 function generateMarkdown(data) {
 
+let licenseLink = renderLicenseLink(data.license)
+let licenseSection = renderLicenseSection(data.license)
+
 return `
-${renderLicenseLink(data.license)}
+${licenseLink}
 
 # Title
 ${data.title}
@@ -104,7 +109,7 @@ ${data.usage}
     
 ## License
     
-This repository includes a(n) ${data.license}${renderLicenseSection(data.license)} license. 
+This repository includes a(n) ${data.license}${licenseSection} license. 
 
 ## Contributing
    
