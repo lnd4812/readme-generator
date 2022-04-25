@@ -7,29 +7,29 @@ function renderLicenseLink(license) {
 
     switch (license) {
 
-        case "MIT": { 
+        case "MIT": 
         licenseLink = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
-        break;}
+        break;
 
-        case "Apache": {
+        case "Apache": 
         licenseLink = "([![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
-        break;}
+        break;
 
-        case "BSD 2-clause": {
+        case "BSD 2-clause": 
         licenseLink = "[![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)]";
-        break; }
+        break; 
 
-        case "BSD 3-clause": {
+        case "BSD 3-clause":
         licenseLink = "[![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
-        break; }
+        break; 
 
-        case "CC0": {
+        case "CC0": 
         licenseLink = "[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)]";
-        break;}
+        break;
 
-        default: {
+        default:
         licenseLink = "";
-        break;}
+        break;
     }
    return licenseLink;
 }
@@ -42,29 +42,29 @@ function renderLicenseSection(license) {
     
     switch (license) {
 
-        case "MIT": {
+        case "MIT": 
         licenseSection = "[MIT license link](https://choosealicense.com/licenses/mit/)";
-        break;}
+        break;
 
-        case "Apache": {
+        case "Apache": 
         licenseSection = "[Apache license link](https://choosealicense.com/licenses/apache-2.0/)";
-        break; }
+        break; 
 
         case "BSD 2-clause":
         licenseSection = "[2-Clause BSD license link](https://opensource.org/licenses/BSD-2-Clause)";
         break;
 
-        case "BSD 3-clause": {
+        case "BSD 3-clause": 
         licenseSection = "[3-Clause BSD license link](https://opensource.org/licenses/BSD-3-Clause)";
-        break;}
+        break;
 
-        case "CC0": {
+        case "CC0": 
         licenseSection = "[Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)";
-        break; }
+        break; 
 
-        default: {
+        default: 
         licenseSection = "";
-        break;}
+        break;
     }    
     return licenseSection;
     
@@ -104,7 +104,7 @@ ${data.usage}
     
 ## License
     
-This repository includes a(n) ${data.license} license. ${renderLicenseSection(data.license)}
+This repository includes a(n) ${data.license}${renderLicenseSection(data.license)} license. 
 
 ## Contributing
    
@@ -124,11 +124,11 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="github.com:${data.github}">'github.com:lnd4812'</a>
+My GitHub Username is <a href="${data.github}">github.com:lnd4812</a>
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="${data.link}">'git@github.com/lnd4812/readme-generator.git'</a>
+My GitHub repository link for this project is <a href="${data.link}">git@github.com/lnd4812/readme-generator.git</a>
         
 ## Contact information
         
