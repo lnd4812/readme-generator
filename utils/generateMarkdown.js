@@ -2,7 +2,8 @@
 
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
 function renderLicenseLink(license) {
-       
+    console.log(license);
+
     let licenseLink = "";
 
     // if (license = 'MIT') {
@@ -21,37 +22,38 @@ function renderLicenseLink(license) {
 
     switch(license) {
 
-        case ['MIT' ]: 
+        case 'MIT': 
         licenseLink = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
         break;
 
-        case [ 'Apache' ]: 
+        case 'Apache': 
         licenseLink = "![License: Apache](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]";
         break;
 
-        case [ 'BSD 2-clause' ]: 
+        case 'BSD 2-clause': 
         licenseLink = "![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)]";
         break; 
 
-        case [ 'BSD 3-clause' ]:
+        case 'BSD 3-clause':
         licenseLink = "![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
         break; 
 
-        case [ 'CC0 ' ]: 
+        case 'CC0 ': 
         licenseLink = "![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)]";
         break;
 
         default:
         licenseLink = "";
-       
+        break;
     }
-   return licenseLink;
+    return licenseLink;
 };
 
 
 // function that returns the license section of README; if there is no license, an empty string is returned
 function renderLicenseSection(license) {   
-    
+    console.log(license);
+
     let licenseSection = "";   
     
     // if (license = 'MIT') {
@@ -92,20 +94,22 @@ function renderLicenseSection(license) {
 
         default: 
         licenseSection = "";
-       
-    }    
+        break
+     
+        };    
     return licenseSection;
+   
 };
 
 
 // function to generate markdown for read me
-
 function generateMarkdown(data) {
-
+   
 let licenseLink = renderLicenseLink(data.license);
 let licenseSection = renderLicenseSection(data.license);
 
 return `
+
 ${licenseLink}
 
 # Title
@@ -128,7 +132,7 @@ ${data.description}
 
 ${data.installation}
 
-##  Usage
+## Usage
 
 ${data.usage}
 

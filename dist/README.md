@@ -1,13 +1,14 @@
 
 
 
+
 # Title
 
 title
 
 ## Description
 
-description
+undefined
 
 ## Table of Contents
 * [Installation](#installation)
@@ -19,27 +20,27 @@ description
 
 ## Installation
 
-install
+undefined
 
-##  Usage
+## Usage
 
-usage
+undefined
 
 ## License
 
-This repository includes a(n) CC0 license.
+This repository includes a(n) BSD 3-clause license.
 
 ## Contributing
 
-contribute
+undefined
 
 ## Testing
 
-testing
+undefined
 
 ## Credits
 
-credits
+undefined
 
 ## Questions?
 
@@ -47,13 +48,13 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is <a href="https://github.com/lnd4812">lnd4812</a>
+My GitHub Username is <a href="https://github.com/undefined">lnd4812</a>
 
 ## GitHub Repository
 
-My GitHub repository link for this project is <a href="https://git@github.com/repository">lnd4812/readme-generator.git</a>
+My GitHub repository link for this project is <a href="https://git@github.com/undefined">lnd4812/readme-generator.git</a>
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:email">laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:undefined">laureldavid64@gmail.com</a>
 
