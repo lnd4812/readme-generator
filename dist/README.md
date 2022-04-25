@@ -2,12 +2,12 @@
 
 
 # Title
-title
+Title
 
   
 ## Description
     
-disoaf
+description
 
 ## Table of Contents
     
@@ -20,27 +20,27 @@ disoaf
     
 ## Installation
     
-oadsf
+install
     
 ##  Usage
    
-odsa
+usage
     
 ## License
     
-This repository includes BSD 2-clause license .
+This repository includes Apache license .
 
 ## Contributing
    
-hiaodsf\
+contribute
     
 ## Testing
    
-dsa[fo0uasd\
+tests
 
 ## Credits
 
-iasf
+not applicable
 
 ## Questions?
 
@@ -48,12 +48,12 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="github.com:osi">lnd4812</a>
+My GitHub Username is <a href="github.com:github.com:lnd4812">lnd4812</a>
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="daso"></a>
+My GitHub repository link for this project is <a href="git@github.com/lnd4812/readme-generator.git"></a>
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:dsofi">laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:laureldavid64@gmail.com">laureldavid64@gmail.com</a>
