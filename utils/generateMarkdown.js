@@ -124,11 +124,11 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="${data.github}">github.com:lnd4812</a>
+My GitHub Username is <a href="${data.github}">github.com/lnd4812</a>
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="${data.link}">git@github.com/lnd4812/readme-generator.git</a>
+My GitHub repository link for this project is <a href="${data.link}">lnd4812/readme-generator.git</a>
         
 ## Contact information
         
