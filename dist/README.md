@@ -2,12 +2,12 @@
 
 
 # Title
-hasdo
+title
 
   
 ## Description
     
-psdoi
+description
 
 ## Table of Contents
     
@@ -20,11 +20,11 @@ psdoi
     
 ## Installation
     
-psao
+installation
     
 ##  Usage
    
-psohf
+usage
     
 ## License
     
@@ -32,15 +32,15 @@ This repository includes a(n) Apache license.
 
 ## Contributing
    
-aio
+guidelines
     
 ## Testing
    
-dspoi
+na
 
 ## Credits
 
-pahfo
+na
 
 ## Questions?
 
@@ -48,11 +48,11 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="paio">github.com:lnd4812</a>
+My GitHub Username is <a href="github.com/lnd4812">github.com/lnd4812</a>
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="github.com/lnd4812/readme-generator.git">git@github.com/lnd4812/readme-generator.git</a>
+My GitHub repository link for this project is <a href="git@github.com/lnd4812/readme-generator.git">lnd4812/readme-generator.git</a>
         
 ## Contact information
         
