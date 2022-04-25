@@ -1,59 +1,59 @@
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+
 
 # Title
+
 title
 
-  
 ## Description
-    
-dasdfi
+
+description
 
 ## Table of Contents
-    
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Testing](#testing)
 * [Credits](#credits)
 * [Questions](#questions)
-    
+
 ## Installation
-    
-uashiflau
-    
+
+install
+
 ##  Usage
-   
-asdfi
-    
+
+usage
+
 ## License
-    
-This repository includes a(n) BSD 2-clause license[MIT license link](https://choosealicense.com/licenses/mit/). 
+
+This repository includes a(n) CC0 license.
 
 ## Contributing
-   
-ahjosdi
-    
+
+contribute
+
 ## Testing
-   
-oaifu
+
+testing
 
 ## Credits
 
-ashifpa
+credits
 
 ## Questions?
 
 If you have any questions, please see my contact details below:
-        
+
 ## GitHub Username
-    
-My GitHub Username is <a href="https://github.com/adi">lnd4812</a>
-        
+
+My GitHub Username is <a href="https://github.com/lnd4812">lnd4812</a>
+
 ## GitHub Repository
-    
-My GitHub repository link for this project is <a href="https://git@github.com/asif">lnd4812/readme-generator.git</a>
-        
+
+My GitHub repository link for this project is <a href="https://git@github.com/repository">lnd4812/readme-generator.git</a>
+
 ## Contact information
-        
-To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:api">laureldavid64@gmail.com</a>
+
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:email">laureldavid64@gmail.com</a>
+
