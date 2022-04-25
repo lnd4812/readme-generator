@@ -1,11 +1,13 @@
 
+
+
 # Title
-osz
-//license badge here?
+title
+
   
 ## Description
     
-f
+des
 
 ## Table of Contents
     
@@ -18,28 +20,27 @@ f
     
 ## Installation
     
-siaf
+instaq
     
 ##  Usage
    
-oispf
+ioahsd
     
 ## License
     
-This repository includes MIT.
-// how to add license url
+This repository includes Apache license .
 
 ## Contributing
    
-psodafjo
+aisfo
     
 ## Testing
    
-soiaf
+ois
 
 ## Credits
 
-\hpfi\
+iahdf;
 
 ## Questions?
 
@@ -47,12 +48,12 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="github.com:spo">lnd4812</a>;
+My GitHub Username is <a href="github.com:odahfo">lnd4812</a>;
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="spdf">git@github.com/lnd4812/readme-generator.git</a>;
+My GitHub repository link for this project is <a href="sdo">git@github.com/lnd4812/readme-generator.git</a>;
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:sdpoaf">laureldavid64@gmail.com</a>;
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:oiahdfso">laureldavid64@gmail.com</a>;

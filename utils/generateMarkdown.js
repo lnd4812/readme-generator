@@ -3,10 +3,8 @@
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
 function renderLicenseLink(license) {
     
-    return`
-
     let licenseLink = "";
-    
+
     switch (license) {
 
         case "MIT":
@@ -33,16 +31,15 @@ function renderLicenseLink(license) {
         licenseLink = "";
         break;
     }
-   `;
+   return licenseLink;
 }
+ 
 
 // function that returns the license section of README; if there is no license, an empty string is returned
 function renderLicenseSection(license) {    
       
-    return`
-
-    let licenseSection = "";
-
+    let licenseSection = "";    
+    
     switch (license) {
 
         case "MIT":
@@ -68,8 +65,8 @@ function renderLicenseSection(license) {
         default:
         licenseSection = "";
         break;
-        }
-    `;     
+    }    
+    return licenseSection;
 };
 
 // function to generate markdown for read me
@@ -77,9 +74,11 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
 
 return `
+${renderLicenseLink(data.license)}
+
 # Title
 ${data.title}
-//${licenseLink} here?
+
   
 ## Description
     
@@ -104,8 +103,7 @@ ${data.usage}
     
 ## License
     
-This repository includes ${data.license} license.
-// how to add license url from ${licenseSection} 
+This repository includes ${data.license} license ${renderLicenseSection(data.license)}.
 
 ## Contributing
    
@@ -140,10 +138,7 @@ To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto
       
 // access information produced from index.js file
 module.exports = generateMarkdown;
-let license = generateMarkdown.license;
 
-renderLicenseLink(license);
-renderLicenseSection(license);
 
     
 
