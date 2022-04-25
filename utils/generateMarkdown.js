@@ -3,8 +3,10 @@
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
 function renderLicenseLink(license) {
     
-    let licenseLink = "";
+    return`
 
+    let licenseLink = "";
+    
     switch (license) {
 
         case "MIT":
@@ -31,11 +33,14 @@ function renderLicenseLink(license) {
         licenseLink = "";
         break;
     }
+   `;
 }
 
 // function that returns the license section of README; if there is no license, an empty string is returned
 function renderLicenseSection(license) {    
       
+    return`
+
     let licenseSection = "";
 
     switch (license) {
@@ -63,7 +68,8 @@ function renderLicenseSection(license) {
         default:
         licenseSection = "";
         break;
-    }
+        }
+    `;     
 };
 
 // function to generate markdown for read me
@@ -73,7 +79,7 @@ function generateMarkdown(data) {
 return `
 # Title
 ${data.title}
-//license badge here?
+//${licenseLink} here?
   
 ## Description
     
@@ -99,7 +105,7 @@ ${data.usage}
 ## License
     
 This repository includes ${data.license} license.
-// how to add license url
+// how to add license url from ${licenseSection} 
 
 ## Contributing
    
