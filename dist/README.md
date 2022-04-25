@@ -1,5 +1,5 @@
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
 
 # Title
 title
@@ -7,7 +7,7 @@ title
   
 ## Description
     
-des
+dasdfi
 
 ## Table of Contents
     
@@ -20,27 +20,27 @@ des
     
 ## Installation
     
-hjoiasd
+uashiflau
     
 ##  Usage
    
-dai;a
+asdfi
     
 ## License
     
-This repository includes a(n) MIT[MIT license link](https://choosealicense.com/licenses/mit/) license. 
+This repository includes a(n) BSD 2-clause license[MIT license link](https://choosealicense.com/licenses/mit/). 
 
 ## Contributing
    
-jaiosf
+ahjosdi
     
 ## Testing
    
-oadsi
+oaifu
 
 ## Credits
 
-aosiy
+ashifpa
 
 ## Questions?
 
@@ -48,12 +48,12 @@ If you have any questions, please see my contact details below:
         
 ## GitHub Username
     
-My GitHub Username is <a href="https://github.com/lnd4812">lnd4812</a>
+My GitHub Username is <a href="https://github.com/adi">lnd4812</a>
         
 ## GitHub Repository
     
-My GitHub repository link for this project is <a href="https://git@github.com/lnd4812/readme-generator.git">lnd4812/readme-generator.git</a>
+My GitHub repository link for this project is <a href="https://git@github.com/asif">lnd4812/readme-generator.git</a>
         
 ## Contact information
         
-To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:laudo">laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:api">laureldavid64@gmail.com</a>
