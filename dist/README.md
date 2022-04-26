@@ -1,14 +1,14 @@
 
 
-![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)
+![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)
 
 # Title
 
-title
+hspdof
 
 ## Description
 
-description
+apsio
 
 ## Table of Contents
 
@@ -21,27 +21,27 @@ description
 
 ## Installation
 
-installation
+idaphf
 
 ## Usage
 
-usage
+ahdf
 
 ## License
 
-This repository includes a(n) CC0 license.  [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
+This repository includes a(n) BSD 3-clause license.  [3-Clause BSD license link](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Contributing
 
-contribute
+dahfhi
 
 ## Testing
 
-testing
+ahsdf
 
 ## Credits
 
-credits
+asphdfo
 
 ## Questions?
 
@@ -49,12 +49,12 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is [github.com/lnd4812](https://lnd4812)
+My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.git)
+My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.com)
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:laureldavid64@gmail.com ">)laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com](<a hef="mailto:laureldavid64@gmail.com"></a>)
