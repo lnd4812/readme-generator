@@ -116,12 +116,10 @@ const promptUser = () => {
 };
 
 
-// function to initalize app
+// function to initalize app and create array of answers required to population the template and then generate the README
 function init() {
     promptUser()
         .then(answers => {
-        console.log(answers);
-
         const generatedMarkdown = generateMarkdown(answers);
     
         // generate readme
