@@ -101,6 +101,19 @@ const promptUser = () => {
         },
         {
             type: 'input',
+            name: 'video',
+            message: 'Please add a link to the video of application in use. (required)',
+            validate: videoInput => {
+                if (videoInput) {
+                            return true;
+                } else {
+                        console.log('Please add the link to your video.');
+                        return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'contact',
             message: 'Please enter an e-mail address at which you may be contacted in case there are questions. (required)',
             validate: enterContactInfo => {
