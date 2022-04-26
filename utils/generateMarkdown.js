@@ -66,6 +66,7 @@ ${data.title}
 ${data.description}
 
 ## Table of Contents
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -83,7 +84,7 @@ ${data.usage}
 
 ## License
 
-This repository includes a(n) ${data.license} license${licenseSection}.
+This repository includes a(n) ${data.license} license ${licenseSection}.
 
 ## Contributing
 
@@ -107,11 +108,11 @@ My GitHub Username is [GitHub Username]("https://github.com/${data.github})">lnd
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [GitHub repository link](https://git@github.com/${data.link})>lnd4812/readme-generator.git
+My GitHub repository link for this project is [GitHub repository link](https://git@github.com/${data.link})
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:${data.contact}">)laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:${data.contact}">) laureldavid64@gmail.com</a>
 
 `;
   
