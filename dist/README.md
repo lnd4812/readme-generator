@@ -4,7 +4,7 @@
 
 # Title
 
-README generator
+README Generator
 
 ## Description
 
@@ -33,7 +33,7 @@ This application is covered under the MIT license.  [MIT license link](https://c
 
 ## Contributing
 
-Please visit the [Contributor Covenant website](https://contributor-covenant.org) for guidance.
+[Contributor Covenant website](https://contributor-covenant.org) for guidance.
 
 ## Testing
 
@@ -49,16 +49,16 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is [github.com/lnd4812](https://[github.com/lnd4812](https://github.com/lnd4812))
+My GitHub Username is [Github Username](https://github.com/lnd4812))
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://[GitHub repository Link](https://git@github.com/lnd4812/readme-generator.git))
+My GitHub repository link for this project is [GitHub repository Link](https://git@github.com/lnd4812/readme-generator.git)
 
 ## Application Video Link
 
-The link to the application video may be accessed at [application video](https://[application video link](https://drive.google.com/file/d/1JP54YkB_MXeJowQajvyzBK8MNAf0exVC/view))
+The link to the application video may be accessed at [application video link](https://drive.google.com/file/d/1JP54YkB_MXeJowQajvyzBK8MNAf0exVC/view)
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:laureldavid64@gmail.com"></a>
+To contact me directly, please feel free to drop me an e-mail at: <a hef="mailto:laureldavid64@gmail.com">laureldavid64@gmail.com</a>
