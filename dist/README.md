@@ -1,14 +1,14 @@
 
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
 
 # Title
 
-title
+ohdapfoi
 
 ## Description
 
-dioasf
+pdhfoi
 
 ## Table of Contents
 
@@ -21,27 +21,27 @@ dioasf
 
 ## Installation
 
-sodhfo
+pahfd
 
 ## Usage
 
-siodf
+pdsf
 
 ## License
 
-This application is covered under the MIT license.  [MIT license link](https://choosealicense.com/licenses/mit/)
+This application is covered under the BSD 2-clause license.  [2-Clause BSD license link](https://opensource.org/licenses/BSD-2-Clause)
 
 ## Contributing
 
-jpaosdjfpo
+ap;iosi
 
 ## Testing
 
-pasoihfsd
+paof
 
 ## Credits
 
-paohf
+doaf
 
 ## Questions?
 
@@ -53,8 +53,8 @@ My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.com)
+My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.git)
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:ldavid@rmacan.com"></a>
+To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:laureldavid64@gmail.com"></a>
