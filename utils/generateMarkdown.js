@@ -102,15 +102,15 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is [GitHub Username](${data.github})
+My GitHub Username is [github.com/lnd4812](https://${data.github})
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [GitHub repository link](${data.link})
+My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://${data.link})
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:${data.contact}">)laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:${data.contact} ">)laureldavid64@gmail.com</a>
 `;
   
 };
