@@ -102,7 +102,7 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is ${data.github})
+My GitHub Username is ${data.github}
 
 ## GitHub Repository
 
