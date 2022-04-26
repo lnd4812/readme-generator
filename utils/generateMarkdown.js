@@ -110,7 +110,7 @@ My GitHub repository link for this project is [git@github.com/lnd4812/readme-gen
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com](<a hef="mailto:${data.contact}"></a>)
+To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:${data.contact}"></a>
 `;
   
 };

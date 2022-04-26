@@ -1,14 +1,14 @@
 
 
-![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)
+ 
 
 # Title
 
-hspdof
+dahfliu
 
 ## Description
 
-apsio
+oasidhuif
 
 ## Table of Contents
 
@@ -21,27 +21,27 @@ apsio
 
 ## Installation
 
-idaphf
+payhgui
 
 ## Usage
 
-ahdf
+aofvu
 
 ## License
 
-This repository includes a(n) BSD 3-clause license.  [3-Clause BSD license link](https://opensource.org/licenses/BSD-3-Clause)
+This repository includes a(n)  license.   
 
 ## Contributing
 
-dahfhi
+iasfo
 
 ## Testing
 
-ahsdf
+aof
 
 ## Credits
 
-asphdfo
+oiahdfs
 
 ## Questions?
 
@@ -53,8 +53,8 @@ My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.com)
+My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.git)
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com](<a hef="mailto:laureldavid64@gmail.com"></a>)
+To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:laureldavid64@gmail.com"></a>
