@@ -1,14 +1,14 @@
 
 
-
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 # Title
 
-title
+Readme Generator
 
 ## Description
 
-descriptoin
+Use node js along with inquirer and fs modules to generate a readme file from the command line application
 
 ## Table of Contents
 
@@ -21,27 +21,27 @@ descriptoin
 
 ## Installation
 
-installation
+enter node index.js and answer each question as it appears on screen
 
 ## Usage
 
-usage
+to generate README files for projects by having to enter only a few comments rather than having to create one from scratch.
 
 ## License
 
-This application is covered under the none license.  No license selected
+This application is covered under the Apache license.  [Apache license link](https://choosealicense.com/licenses/apache-2.0/)
 
 ## Contributing
 
-jgaio
+please vist contributor covenant website for guidance.
 
 ## Testing
 
-ahfo
+no testing at this time
 
 ## Credits
 
-fyos
+Ask BCS, my tutor, various website including Stackoverflow, W3 schoold.
 
 ## Questions?
 
