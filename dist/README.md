@@ -4,11 +4,11 @@
 
 # Title
 
-Readme Generator
+README Generator
 
 ## Description
 
-Use node js along with inquirer and fs modules to generate a readme file from the command line application
+Using node js and incorporating the Inquirer and FS modules, generate a README file from the command line.
 
 ## Table of Contents
 
@@ -21,27 +21,27 @@ Use node js along with inquirer and fs modules to generate a readme file from th
 
 ## Installation
 
-enter node index.js and answer each question as it appears on screen
+Enter node index.js on the command line to initiate the application and then input an answer for each question that appears in the command line until finished.
 
 ## Usage
 
-to generate README files for projects by having to enter only a few comments rather than having to create one from scratch.
+Generating a README automatically for each project from the command line should save time and ensure more consistency in documentation than would having to create one from scratch for each project.  Information displayed in the file can be easily edited and updated as well.
 
 ## License
 
-This application is covered under the Apache license.  [Apache license link](https://choosealicense.com/licenses/apache-2.0/)
+This application is covered under the MIT license.  [MIT license link](https://choosealicense.com/licenses/mit/)
 
 ## Contributing
 
-please vist contributor covenant website for guidance.
+Please visit the [Contributor Covenant website](https://contributor-covenant.org) for guidance.
 
 ## Testing
 
-no testing at this time
+No specific testing other than to ensure the application starts with a request for the title of the project and outputs the correct responses to a README file.
 
 ## Credits
 
-Ask BCS, my tutor, various website including Stackoverflow, W3 schoold.
+Assistance from the tutor assigned to me has been extremely helpful, as well as various websites such as [Stack Overflow](https://stackoverflow.com), [MDN docs](https://developer.mozilla.org), [W3Schools](https://www.w3schools.com), [Google](https://google.ca) in general along with  askBCS were also useful resources.
 
 ## Questions?
 

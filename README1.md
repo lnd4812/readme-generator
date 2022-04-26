@@ -32,7 +32,7 @@ This application is covered under MIT license [MIT license link](https://choosea
 
 ## Contributing
 
-Please visit the [Contributor Covenant website](https://contributor-covenant.org) for guidelines.
+Please visit the [Contributor Covenant website](https://contributor-covenant.org) for guidance.
 
 ## Testing
 
@@ -40,7 +40,7 @@ No specific testing other than to ensure the application starts with a request f
 
 ## Credits
 
-Assistance from the tutor assigned to me has been extremely helpful, while googling abouth the various issues that arose as I was completing this project, such as [Stack Overflow](https://stackoverflow.com), [Google in general](https://google.ca), [MDN docs](https://developer.mozilla.org) and [W3Schools](https://www.w3schools.com) and askBCS were also useful resources.
+Assistance from the tutor assigned to me has been extremely helpful, as well as various website such as [Stack Overflow](https://stackoverflow.com), [MDN docs](https://developer.mozilla.org), [W3Schools](https://www.w3schools.com) and [Google](https://google.ca) in general along with askBCS were also useful resources.
 
 ## Questions?
 
