@@ -1,10 +1,10 @@
 
 
-![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
+![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)
 
 # Title
 
-README Generator
+title
 
 ## Description
 
@@ -29,7 +29,7 @@ usage
 
 ## License
 
-This repository includes a(n) BSD 2-clause license.  [2-Clause BSD license link](https://opensource.org/licenses/BSD-2-Clause)
+This repository includes a(n) CC0 license.  [Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ## Contributing
 
@@ -37,7 +37,7 @@ contribute
 
 ## Testing
 
-collatoration
+testing
 
 ## Credits
 
@@ -49,13 +49,12 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is [GitHub Username](github.com/lnd4812)
+My GitHub Username is [github.com/lnd4812](https://lnd4812)
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [GitHub repository link](git@github.com/lnd4812/readme-generator.git)
+My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.git)
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:laureldavid64@gmail.com">)laureldavid64@gmail.com</a>
-
+To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:laureldavid64@gmail.com ">)laureldavid64@gmail.com</a>
