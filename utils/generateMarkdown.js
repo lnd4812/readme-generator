@@ -15,14 +15,14 @@ function renderLicenseLink(license) {
         licenseLink = "![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)";
     } else if (license.includes('CC0')) {
         licenseLink = "![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)";
-    } else {
-        licenseLink = " ";
+    } else if (license.includes('none')) {
+        licenseLink = "";
     }
     return licenseLink;
 };
 
 
-// function that returns the license section of README; if there is no license, an empty string is returned
+// function that returns the license section of README or indicates one was not chosen 
 function renderLicenseSection(license) {   
     
     let licenseSection = "";   
@@ -37,8 +37,8 @@ function renderLicenseSection(license) {
         licenseSection = "[3-Clause BSD license link](https://opensource.org/licenses/BSD-3-Clause)";
     } else if (license.includes('CC0')) {
         licenseSection = "[Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/)";
-    } else {
-        licenseSection = " ";
+    } else if (license.includes('none')) {
+        licenseSection = "No license selected";
     }
     return licenseSection;
 };
@@ -82,7 +82,7 @@ ${data.usage}
 
 ## License
 
-This repository includes a(n) ${data.license} license.  ${licenseSection}
+This application is covered under the ${data.license} license.  ${licenseSection}
 
 ## Contributing
 
@@ -112,7 +112,6 @@ My GitHub repository link for this project is [git@github.com/lnd4812/readme-gen
 
 To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:${data.contact}"></a>
 `;
-  
 };
       
 // access information produced from index.js file

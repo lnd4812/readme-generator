@@ -54,8 +54,8 @@ const promptUser = () => {
         {
             type: 'checkbox',
             name: 'license',
-            message: 'If you would like to add a license to your project, please click on one of the options below.  Otherwise, please hit Enter.',
-            choices: ['MIT', 'Apache', 'BSD 2-clause', 'BSD 3-clause', 'CC0']
+            message: 'If you would like to add a license to your project, please click on one of the options below and hit Enter.',
+            choices: ['MIT', 'Apache', 'BSD 2-clause', 'BSD 3-clause', 'CC0', 'none']
         },
         {
             type: 'input',
@@ -77,7 +77,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'github',
-            message: 'What is your GitHub Username? (required)',
+            message: 'What is your GitHub Username? (required - please include the "github.com/")',
             validate: githubNameInput => {
                 if (githubNameInput) {
                     return true;
@@ -89,7 +89,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'link',
-            message: 'Please add a link to your GitHub repository. (required)',
+            message: 'Please add a link to your GitHub repository. (required - please enter complete url)',
             validate: githubLinkInput => {
                 if (githubLinkInput) {
                             return true;

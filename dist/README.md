@@ -1,14 +1,14 @@
 
 
- 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 # Title
 
-dahfliu
+title
 
 ## Description
 
-oasidhuif
+dioasf
 
 ## Table of Contents
 
@@ -21,27 +21,27 @@ oasidhuif
 
 ## Installation
 
-payhgui
+sodhfo
 
 ## Usage
 
-aofvu
+siodf
 
 ## License
 
-This repository includes a(n)  license.   
+This application is covered under the MIT license.  [MIT license link](https://choosealicense.com/licenses/mit/)
 
 ## Contributing
 
-iasfo
+jpaosdjfpo
 
 ## Testing
 
-aof
+pasoihfsd
 
 ## Credits
 
-oiahdfs
+paohf
 
 ## Questions?
 
@@ -53,8 +53,8 @@ My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.git)
+My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.com)
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:laureldavid64@gmail.com"></a>
+To contact me directly, please feel free to drop me an e-mail at: [laureldavid64@gmail.com]<a hef="mailto:ldavid@rmacan.com"></a>
