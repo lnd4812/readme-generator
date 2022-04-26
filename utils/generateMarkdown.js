@@ -111,7 +111,6 @@ My GitHub repository link for this project is [GitHub repository link](${data.li
 ## Contact information
 
 To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:${data.contact}">)laureldavid64@gmail.com</a>
-
 `;
   
 };
