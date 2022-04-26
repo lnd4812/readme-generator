@@ -54,7 +54,9 @@ My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
 
 My GitHub repository link for this project is [GitHub repository Link](https://git@github.com/lnd4812/readme-generator.git)
 
-Link to the video of the application being deployed may be found here: https://drive.google.com/file/d/1JP54YkB_MXeJowQajvyzBK8MNAf0exVC/view
+## Application Video Link
+
+Link to the video of the application being deployed may be found here: [application video link](https://drive.google.com/file/d/1JP54YkB_MXeJowQajvyzBK8MNAf0exVC/view)
 
 ## Contact information
 

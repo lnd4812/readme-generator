@@ -4,7 +4,7 @@
 
 # Title
 
-README Generator
+Readme Generator
 
 ## Description
 
@@ -25,7 +25,7 @@ Enter node index.js on the command line to initiate the application and then inp
 
 ## Usage
 
-Generating a README automatically for each project from the command line should save time and ensure more consistency in documentation than would having to create one from scratch for each project.  Information displayed in the file can be easily edited and updated as well.
+Generating a README automatically for each project from the commmand line should save time and ensure more consistency in documentation than would having to create a README file from scratch for each project.  Information displayed in the file can be easily revised as well.
 
 ## License
 
@@ -37,11 +37,11 @@ Please visit the [Contributor Covenant website](https://contributor-covenant.org
 
 ## Testing
 
-No specific testing other than to ensure the application starts with a request for the title of the project and outputs the correct responses to a README file.
+No specific testing other than to ensure the application starts with a request for the title of the project and outputs the correct responses to the README file.
 
 ## Credits
 
-Assistance from the tutor assigned to me has been extremely helpful, as well as various websites such as [Stack Overflow](https://stackoverflow.com), [MDN docs](https://developer.mozilla.org), [W3Schools](https://www.w3schools.com), [Google](https://google.ca) in general along with  askBCS were also useful resources.
+Assistance from the tutor assigned to me has been extremely helpful, as well as various website such as [Stack Overflow](https://stackoverflow.com), [MDN docs](https://developer.mozilla.org), [W3Schools](https://www.w3schools.com) and [Google](https://google.ca) in general along with askBCS were also useful resources.
 
 ## Questions?
 
@@ -49,11 +49,11 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812)
+My GitHub Username is [github.com/lnd4812](https://My GitHub Username is [github.com/lnd4812](https://github.com/lnd4812))
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://git@github.com/lnd4812/readme-generator.git)
+My GitHub repository link for this project is [git@github.com/lnd4812/readme-generator.git](https://[GitHub repository Link](https://git@github.com/lnd4812/readme-generator.git))
 
 ## Contact information
 
