@@ -1,14 +1,14 @@
 
 
-![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)
+
 
 # Title
 
-ohdapfoi
+title
 
 ## Description
 
-pdhfoi
+descriptoin
 
 ## Table of Contents
 
@@ -21,27 +21,27 @@ pdhfoi
 
 ## Installation
 
-pahfd
+installation
 
 ## Usage
 
-pdsf
+usage
 
 ## License
 
-This application is covered under the BSD 2-clause license.  [2-Clause BSD license link](https://opensource.org/licenses/BSD-2-Clause)
+This application is covered under the none license.  No license selected
 
 ## Contributing
 
-ap;iosi
+jgaio
 
 ## Testing
 
-paof
+ahfo
 
 ## Credits
 
-doaf
+fyos
 
 ## Questions?
 
