@@ -1,8 +1,8 @@
-
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');  // template for README
 
+// use inquirer module to prompt a user for necessary input to populate the README template
 const promptUser = () => {
     
     return inquirer
@@ -119,18 +119,17 @@ const promptUser = () => {
 // function to initalize app
 function init() {
     promptUser()
-    .then(answers => {
-    console.log(answers);
+        .then(answers => {
+        console.log(answers);
 
-    const generatedMarkdown = generateMarkdown(answers);
-    console.log(generatedMarkdown);       
-
-    // generate readme
-    fs.writeFileSync('./dist/README.md', generatedMarkdown, err => {
-        if (err) throw err;
+        const generatedMarkdown = generateMarkdown(answers);
+    
+        // generate readme
+        fs.writeFileSync('./dist/README.md', generatedMarkdown, err => {
+            if (err) throw err;
+        });
     });
-});
-}
+};
  
 //Function call to initialize app
 init();

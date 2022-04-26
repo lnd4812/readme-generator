@@ -2,20 +2,19 @@
 
 // function to return a license badge based on which license is passed in; if no license, an empty string is returned
 function renderLicenseLink(license) {
-    console.log(license);
-
+    
     let licenseLink = "";
 
     if (license.includes('MIT')) {
-        licenseLink = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+        licenseLink = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
     } else if (license.includes('Apache')) {
-        licenseLink = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
+        licenseLink = "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)";
     } else if (license.includes('BSD 2-clause')) {
-        licenseLink = "![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)]";
+        licenseLink = "![License: BSD 2-clause](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)";
     } else if (license.includes('BSD 3-clause')) {
-        licenseLink = "![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]";
+        licenseLink = "![License: BSD 3-clause](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)";
     } else if (license.includes('CC0')) {
-        licenseLink = "![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)]";
+        licenseLink = "![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)";
     } else {
         licenseLink = " ";
     }
@@ -25,8 +24,7 @@ function renderLicenseLink(license) {
 
 // function that returns the license section of README; if there is no license, an empty string is returned
 function renderLicenseSection(license) {   
-    console.log(license);
-
+    
     let licenseSection = "";   
     
     if (license.includes('MIT')) {
@@ -84,7 +82,7 @@ ${data.usage}
 
 ## License
 
-This repository includes a(n) ${data.license} license ${licenseSection}.
+This repository includes a(n) ${data.license} license.  ${licenseSection}
 
 ## Contributing
 
@@ -104,15 +102,15 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is [GitHub Username]("https://github.com/${data.github})">lnd4812</a>
+My GitHub Username is [GitHub Username](${data.github})
 
 ## GitHub Repository
 
-My GitHub repository link for this project is [GitHub repository link](https://git@github.com/${data.link})
+My GitHub repository link for this project is [GitHub repository link](${data.link})
 
 ## Contact information
 
-To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:${data.contact}">) laureldavid64@gmail.com</a>
+To contact me directly, please feel free to drop me an e-mail at: [contact email](<a hef="mailto:${data.contact}">)laureldavid64@gmail.com</a>
 
 `;
   
