@@ -49,7 +49,7 @@ If you have any questions, please see my contact details below:
 
 ## GitHub Username
 
-My GitHub Username is [Github Username](https://github.com/lnd4812))
+My GitHub Username is [Github Username](https://github.com/lnd4812)
 
 ## GitHub Repository
 
